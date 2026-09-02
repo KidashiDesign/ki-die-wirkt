@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0a0a0a;
+  --color-bg-raised: #111111;
+  --color-fg: #f0ece2;
+  --color-fg-muted: #8a8a86;
+  --color-accent: #e5493a;
+  --color-accent-dim: #7a2b23;
+  --color-border: #2a2a2a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-glow-red {
+    color: var(--color-accent);
+    text-shadow:
+      0 0 24px rgba(229, 73, 58, 0.55),
+      0 0 60px rgba(229, 73, 58, 0.25);
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1.5px var(--color-fg);
+    color: transparent;
+    opacity: 0.5;
+  }
+
+  .accent-em {
+    font-style: italic;
+    color: var(--color-accent);
+    text-shadow:
+      0 0 24px rgba(229, 73, 58, 0.55),
+      0 0 60px rgba(229, 73, 58, 0.25);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}

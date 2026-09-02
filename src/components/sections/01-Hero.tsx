@@ -1,0 +1,38 @@
+export default function Hero() {
+  return (
+    <section id="hero" className="relative flex min-h-screen flex-col justify-center px-6 py-24 sm:px-10">
+      <div className="mx-auto w-full max-w-6xl">
+        <h1 className="font-display uppercase leading-[0.92] text-5xl sm:text-7xl lg:text-8xl">
+          <span className="text-outline block">KI HABEN VIELE.</span>
+          <span className="block">
+            <span className="text-glow-red">ERGEBNISSE</span> DIE
+          </span>
+          <span className="block">WENIGSTEN.</span>
+        </h1>
+
+        <p className="mt-10 max-w-xl text-lg text-fg-muted sm:text-xl">
+          <span className="font-semibold text-fg">
+            Drei Fälle aus dem industriellen Mittelstand.
+          </span>{" "}
+          Was blockiert hat. Was den Weg frei gemacht hat. Und was am Ende dabei
+          herauskommt — im Alltag, nicht auf der Folie.
+        </p>
+
+        <div className="mt-16 flex items-center gap-6 font-mono text-sm tracking-widest text-fg-muted">
+          <span className="text-accent">01</span>
+          <span className="h-px w-8 bg-border" />
+          <span>02</span>
+          <span className="h-px w-8 bg-border" />
+          <span>03</span>
+        </div>
+      </div>
+
+      <div className="absolute bottom-10 right-6 flex flex-col items-center gap-2 sm:right-10">
+        <span className="font-mono text-[10px] uppercase tracking-widest text-fg-muted [writing-mode:vertical-rl]">
+          Scroll
+        </span>
+        <span className="h-10 w-px bg-border" />
+      </div>
+    </section>
+  );
+}
