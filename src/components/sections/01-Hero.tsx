@@ -10,7 +10,7 @@ export default function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-[5] flex select-none items-center justify-center overflow-hidden"
       >
-        <span className="animate-hero-zoom whitespace-nowrap font-display uppercase leading-none text-fg/[0.06] blur-[1px] text-[26vw] sm:text-[20vw]">
+        <span className="whitespace-nowrap font-display uppercase leading-none text-fg/[0.06] blur-[1px] text-[26vw] sm:text-[20vw]">
           ERGEBNISSE
         </span>
       </div>

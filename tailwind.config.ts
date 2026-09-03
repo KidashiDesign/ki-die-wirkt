@@ -22,14 +22,9 @@ export default {
         marquee: {
           to: { transform: "translateX(-50%)" },
         },
-        "hero-zoom": {
-          "0%, 100%": { transform: "scale(1)" },
-          "50%": { transform: "scale(1.12)" },
-        },
       },
       animation: {
         marquee: "marquee 22s linear infinite",
-        "hero-zoom": "hero-zoom 8s ease-in-out infinite",
       },
     },
   },
