@@ -1,4 +1,6 @@
 import LiveStatusBar from "./components/ui/LiveStatusBar";
+import ProgressRail from "./components/ui/ProgressRail";
+import useScrollSpy from "./hooks/useScrollSpy";
 import Hero from "./components/sections/01-Hero";
 import TrennerSignalbahn from "./components/sections/02-TrennerSignalbahn";
 import TheseBeat from "./components/sections/03-TheseBeat";
@@ -14,10 +16,15 @@ import TrennerSignalbahn2 from "./components/sections/12-TrennerSignalbahn";
 import BreakCTA from "./components/sections/13-BreakCTA";
 import Footer from "./components/sections/14-Footer";
 
+const RAIL_SECTION_IDS = ["uc-01", "uc-02", "uc-03"];
+
 function App() {
+  const activeIndex = useScrollSpy(RAIL_SECTION_IDS);
+
   return (
     <main className="bg-bg text-fg">
       <LiveStatusBar />
+      <ProgressRail steps={["01", "02", "03"]} activeIndex={activeIndex} />
       <Hero />
       <TrennerSignalbahn />
       <TheseBeat />
