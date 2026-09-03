@@ -14,7 +14,7 @@ export default {
         border: "#2a2a2a",
       },
       fontFamily: {
-        display: ["Anton", "sans-serif"],
+        display: ["Bebas Neue", "sans-serif"],
         body: ["Inter", "sans-serif"],
         mono: ["IBM Plex Mono", "monospace"],
       },
