@@ -52,8 +52,25 @@ body {
   animation: marquee 22s linear infinite;
 }
 
+.marquee-track--reverse {
+  animation-name: marquee-reverse;
+}
+
+.marquee-track--fast {
+  animation-duration: 6s;
+}
+
 @keyframes marquee {
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
