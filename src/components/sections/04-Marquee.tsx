@@ -7,7 +7,7 @@ export default function MarqueeSection() {
         <Marquee text="BEFÄHIGEN · AUTOMATISIEREN · STEUERN ·" variant="solid" />
       </div>
       <div className="pt-8">
-        <Marquee text="WIRKUNG · FERTIG ≠ WIRKUNG · FERTIG ≠ WIRKUNG ·" variant="outline" />
+        <Marquee text="WIRKUNG · FERTIG ≠ WIRKUNG · FERTIG ≠ WIRKUNG ·" variant="outline" direction="right" />
       </div>
     </section>
   );
