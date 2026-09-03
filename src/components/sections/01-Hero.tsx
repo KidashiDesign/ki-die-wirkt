@@ -6,6 +6,15 @@ export default function Hero() {
       <NeuralBackground className="absolute inset-0 z-0" />
       <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-t from-bg via-bg/40 to-bg/80" />
 
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-[5] flex select-none items-center justify-center overflow-hidden"
+      >
+        <span className="animate-hero-zoom whitespace-nowrap font-display uppercase leading-none text-fg/[0.06] blur-[1px] text-[26vw] sm:text-[20vw]">
+          ERGEBNISSE
+        </span>
+      </div>
+
       <div className="relative z-10 mx-auto w-full max-w-6xl">
         <h1 className="font-display uppercase leading-[0.92] text-5xl sm:text-7xl lg:text-8xl">
           <span className="text-outline block">KI HABEN VIELE.</span>
