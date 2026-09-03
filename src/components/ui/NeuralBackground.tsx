@@ -25,8 +25,8 @@ export default function NeuralBackground({
   className,
   color = "#e5493a",
   trailOpacity = 0.15,
-  particleCount = 1000,
-  speed = 0.7,
+  particleCount = 800,
+  speed = 0.5,
 }: NeuralBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
