@@ -56,10 +56,6 @@ body {
   animation-name: marquee-reverse;
 }
 
-.marquee-track--fast {
-  animation-duration: 6s;
-}
-
 @keyframes marquee {
   to {
     transform: translateX(-50%);
