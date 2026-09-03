@@ -1,7 +1,12 @@
+import NeuralBackground from "../ui/NeuralBackground";
+
 export default function Hero() {
   return (
-    <section id="hero" className="relative flex min-h-screen flex-col justify-center px-6 py-24 sm:px-10">
-      <div className="mx-auto w-full max-w-6xl">
+    <section id="hero" className="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 py-24 sm:px-10">
+      <NeuralBackground className="absolute inset-0 z-0" />
+      <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-t from-bg via-bg/40 to-bg/80" />
+
+      <div className="relative z-10 mx-auto w-full max-w-6xl">
         <h1 className="font-display uppercase leading-[0.92] text-5xl sm:text-7xl lg:text-8xl">
           <span className="text-outline block">KI HABEN VIELE.</span>
           <span className="block">
@@ -27,7 +32,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-10 right-6 flex flex-col items-center gap-2 sm:right-10">
+      <div className="absolute z-10 bottom-10 right-6 flex flex-col items-center gap-2 sm:right-10">
         <span className="font-mono text-[10px] uppercase tracking-widest text-fg-muted [writing-mode:vertical-rl]">
           Scroll
         </span>
