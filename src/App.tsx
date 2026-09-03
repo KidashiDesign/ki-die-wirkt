@@ -1,3 +1,4 @@
+import LiveStatusBar from "./components/ui/LiveStatusBar";
 import Hero from "./components/sections/01-Hero";
 import TrennerSignalbahn from "./components/sections/02-TrennerSignalbahn";
 import TheseBeat from "./components/sections/03-TheseBeat";
@@ -16,6 +17,7 @@ import Footer from "./components/sections/14-Footer";
 function App() {
   return (
     <main className="bg-bg text-fg">
+      <LiveStatusBar />
       <Hero />
       <TrennerSignalbahn />
       <TheseBeat />
