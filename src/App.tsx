@@ -1,3 +1,4 @@
+import Logo from "./components/ui/Logo";
 import LiveStatusBar from "./components/ui/LiveStatusBar";
 import ProgressRail from "./components/ui/ProgressRail";
 import useScrollSpy from "./hooks/useScrollSpy";
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <main className="bg-bg text-fg">
+      <Logo />
       <LiveStatusBar />
       <ProgressRail steps={["01", "02", "03"]} activeIndex={activeIndex} />
       <Hero />
