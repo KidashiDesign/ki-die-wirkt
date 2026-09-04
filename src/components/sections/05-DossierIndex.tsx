@@ -31,7 +31,7 @@ const rows: DossierRow[] = [
 export default function DossierIndex() {
   return (
     <section id="dossier" className="border-t border-border px-6 py-24 sm:px-10">
-      <div className="mx-auto flex max-w-6xl items-end justify-between gap-6">
+      <div className="mx-auto flex max-w-7xl items-end justify-between gap-6">
         <h2 className="font-display text-4xl uppercase leading-none sm:text-6xl">
           Drei Fälle. Ein Muster.
         </h2>
@@ -40,7 +40,7 @@ export default function DossierIndex() {
         </p>
       </div>
 
-      <div className="mx-auto mt-12 max-w-6xl divide-y divide-border border-y border-border">
+      <div className="mx-auto mt-12 max-w-7xl divide-y divide-border border-y border-border">
         {rows.map((row) => (
           <div
             key={row.nr}
@@ -69,7 +69,7 @@ export default function DossierIndex() {
                 {row.title}
               </span>
             </div>
-            <div className="relative flex items-center gap-6 pl-16 sm:pl-0">
+            <div className="relative flex shrink-0 items-center gap-6 whitespace-nowrap pl-16 sm:pl-0">
               <span className="font-mono text-xs uppercase tracking-widest text-fg-muted">
                 {row.meta}
               </span>
