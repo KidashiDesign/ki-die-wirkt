@@ -27,7 +27,7 @@ export default function Marquee({ text, variant = "solid", direction = "left", c
           .filter(Boolean)
           .join(" ")}
       >
-        {[0, 1].map((i) => (
+        {[0, 1, 2, 3].map((i) => (
           <span
             key={i}
             className={`whitespace-nowrap pr-4 font-display text-4xl uppercase sm:text-6xl ${textClass}`}
