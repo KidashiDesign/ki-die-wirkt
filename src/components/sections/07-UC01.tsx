@@ -17,6 +17,7 @@ export default function UC01() {
       }
       subline="Automatisierung dort, wo sie Marge bringt — ohne dass ein Byte Produktionswissen das Unternehmen verlässt."
       ghostNumber="01"
+      ghostBackgroundImage="/M2-Waben-Illustration.svg"
       beatLabel="0"
       beatBody={
         <>

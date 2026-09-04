@@ -23,6 +23,7 @@ interface UseCaseSectionProps {
   headline: ReactNode;
   subline: string;
   ghostNumber: string;
+  ghostBackgroundImage?: string;
   beatLabel?: ReactNode;
   beatBody: ReactNode;
   diagramCaption: string;
@@ -39,6 +40,7 @@ export default function UseCaseSection({
   headline,
   subline,
   ghostNumber,
+  ghostBackgroundImage,
   beatLabel,
   beatBody,
   diagramCaption,
@@ -48,7 +50,7 @@ export default function UseCaseSection({
 }: UseCaseSectionProps) {
   return (
     <section id={id} className="relative overflow-hidden border-t border-border px-6 py-24 sm:px-10 lg:py-32">
-      <GhostNumeral number={ghostNumber} />
+      <GhostNumeral number={ghostNumber} backgroundImage={ghostBackgroundImage} />
 
       <div className="relative mx-auto max-w-6xl">
         <SectionKicker label={kickerLabel} meta={kickerMeta} status={kickerStatus} />
