@@ -23,7 +23,7 @@ export default function Logo() {
   return (
     <a
       href="#hero"
-      className={`fixed left-4 top-4 z-50 flex w-14 aspect-[156.4/187.2] items-center justify-center rounded-xl border border-border bg-fg p-1.5 shadow-[0_0_0_1px_rgba(0,0,0,0.04)] backdrop-blur transition-[opacity,transform] duration-700 ease-out hover:scale-105 sm:left-8 sm:top-6 sm:w-16 ${
+      className={`fixed left-4 top-4 z-50 flex w-8 aspect-[156.4/187.2] items-center justify-center rounded-lg border border-border bg-fg p-1 shadow-[0_0_0_1px_rgba(0,0,0,0.04)] backdrop-blur transition-[opacity,transform] duration-700 ease-out hover:scale-105 sm:left-8 sm:top-6 sm:w-10 ${
         visible ? "opacity-100" : "pointer-events-none opacity-0"
       }`}
       aria-label="M² Business Consulting — Zurück zum Start"
