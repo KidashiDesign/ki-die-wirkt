@@ -8,7 +8,7 @@ export default function TrennerSignalbahn2() {
         outlineLine="Wir schliessen die Lücke"
         solidLines={["Zwischen Fertig", "Und Wirkung."]}
       />
-      <SparkleDivider className="mt-16 sm:mt-20" />
+      <SparkleDivider className="mt-[50px]" />
     </section>
   );
 }
