@@ -3,7 +3,12 @@ import NeuralBackground from "../ui/NeuralBackground";
 export default function Hero() {
   return (
     <section id="hero" className="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 py-24 sm:px-10">
-      <NeuralBackground className="absolute inset-0 z-0" />
+      <NeuralBackground
+        className="absolute inset-0 z-0"
+        speed={0.475}
+        particleCount={880}
+        hoverIntensity={1.2}
+      />
       <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-t from-bg via-bg/40 to-bg/80" />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl">
