@@ -7,7 +7,6 @@ import TrennerSignalbahn from "./components/sections/02-TrennerSignalbahn";
 import TheseBeat from "./components/sections/03-TheseBeat";
 import MarqueeSection from "./components/sections/04-Marquee";
 import DossierIndex from "./components/sections/05-DossierIndex";
-import TrennerMessband from "./components/sections/06-TrennerMessband";
 import UC01 from "./components/sections/07-UC01";
 import TrennerMessband2 from "./components/sections/08-TrennerMessband";
 import UC02 from "./components/sections/09-UC02";
@@ -32,7 +31,6 @@ function App() {
       <TheseBeat />
       <MarqueeSection />
       <DossierIndex />
-      <TrennerMessband />
       <UC01 />
       <TrennerMessband2 />
       <UC02 />
