@@ -12,7 +12,7 @@ export default function TheseBeat() {
         </span>
         Sondern wie daraus ein Ergebnis wird.
       </p>
-      <SparkleDivider />
+      <SparkleDivider className="mt-16 sm:mt-20" />
     </section>
   );
 }
