@@ -1,4 +1,5 @@
 import SignalbahnReveal from "../ui/SignalbahnReveal";
+import SparkleDivider from "../ui/SparkleDivider";
 
 export default function TrennerSignalbahn2() {
   return (
@@ -7,6 +8,7 @@ export default function TrennerSignalbahn2() {
         outlineLine="Wir schliessen die Lücke"
         solidLines={["Zwischen Fertig", "Und Wirkung."]}
       />
+      <SparkleDivider />
     </section>
   );
 }
