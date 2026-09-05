@@ -1,3 +1,5 @@
+import SparkleDivider from "../ui/SparkleDivider";
+
 export default function TheseBeat() {
   return (
     <section className="px-6 pb-24 sm:px-10">
@@ -10,6 +12,7 @@ export default function TheseBeat() {
         </span>
         Sondern wie daraus ein Ergebnis wird.
       </p>
+      <SparkleDivider className="mt-16 sm:mt-20" />
     </section>
   );
 }
