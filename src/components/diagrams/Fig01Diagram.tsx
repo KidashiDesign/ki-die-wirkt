@@ -150,13 +150,13 @@ export default function Fig01Diagram() {
 
       {/* Desktop / Tablet — horizontaler Datenfluss */}
       <div className="hidden md:-mx-8 md:block md:overflow-x-auto md:px-8">
-        <svg viewBox="0 0 640 190" className="block w-full min-w-[560px]" aria-hidden="true">
+        <svg viewBox="0 0 640 200" className="block w-full min-w-[560px]" aria-hidden="true">
           <ArrowDefs suffix="-d" />
 
           <path d="M150,48 C196,48 202,60 246,60" fill="none" stroke="rgba(229,73,58,0.28)" strokeWidth="1.5" strokeDasharray="3 5" markerEnd="url(#fig01-arrow-active-d)" />
           <path d="M150,104 C196,104 202,112 246,112" fill="none" stroke="rgba(229,73,58,0.28)" strokeWidth="1.5" strokeDasharray="3 5" markerEnd="url(#fig01-arrow-active-d)" />
           <path d="M416,58 C440,58 448,44 470,42" fill="none" stroke="rgba(138,138,134,0.35)" strokeWidth="1.5" strokeDasharray="3 5" markerEnd="url(#fig01-arrow-muted-d)" />
-          <path d="M400,150 L60,150" fill="none" stroke="rgba(229,73,58,0.32)" strokeWidth="1.5" strokeDasharray="3 5" markerEnd="url(#fig01-arrow-active-d)" />
+          <path d="M400,164 L60,164" fill="none" stroke="rgba(229,73,58,0.32)" strokeWidth="1.5" strokeDasharray="3 5" markerEnd="url(#fig01-arrow-active-d)" />
 
           <BlockedCross cx={443} cy={51} />
 
@@ -167,8 +167,8 @@ export default function Fig01Diagram() {
           <FlowDot path="M150,104 C196,104 202,112 246,112" duration={0.88} delay={0.18} size={2.5} opacity={1} />
           <FlowDot path="M150,104 C196,104 202,112 246,112" duration={0.88} delay={0.62} size={1.8} opacity={0.65} />
 
-          <FlowDot path="M400,150 L60,150" duration={1.3} delay={0.1} size={2.2} opacity={0.9} />
-          <FlowDot path="M400,150 L60,150" duration={1.3} delay={0.65} size={1.5} opacity={0.55} />
+          <FlowDot path="M400,164 L60,164" duration={1.3} delay={0.1} size={2.2} opacity={0.9} />
+          <FlowDot path="M400,164 L60,164" duration={1.3} delay={0.65} size={1.5} opacity={0.55} />
 
           <NodeBox x={20} y={28} w={130} h={40} label="ERP" />
           <NodeBox x={20} y={84} w={130} h={40} label="MASCHINE" />
@@ -178,7 +178,7 @@ export default function Fig01Diagram() {
           <text x={540} y="76" textAnchor="middle" fontSize="10" fill={ACCENT} fontFamily={MONO} letterSpacing="0.08em">
             Kein Abfluss
           </text>
-          <text x={230} y="172" textAnchor="middle" fontSize="10" fill={FG_MUTED} fontFamily={MONO} letterSpacing="0.08em">
+          <text x={320} y="186" textAnchor="middle" fontSize="10" fill={FG_MUTED} fontFamily={MONO} letterSpacing="0.08em">
             Automatisiert zurück
           </text>
         </svg>
