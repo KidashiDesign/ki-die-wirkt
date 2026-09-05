@@ -50,6 +50,12 @@ export default function UseCaseSection({
 }: UseCaseSectionProps) {
   return (
     <section id={id} className="relative overflow-hidden border-t border-border px-6 py-24 sm:px-10 lg:py-32">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute -left-56 -top-40 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle,_#ff8a3d_0%,_rgba(232,69,90,0.2)_100%)] opacity-25 blur-[195px]" />
+        <div className="absolute -right-48 top-1/3 h-[420px] w-[560px] rounded-[45%_55%_60%_40%] bg-[radial-gradient(circle,_#ff8a3d_0%,_rgba(232,69,90,0.2)_100%)] opacity-20 blur-[195px]" />
+        <div className="absolute -bottom-52 left-1/4 h-[480px] w-[480px] rounded-full bg-[radial-gradient(circle,_#ff8a3d_0%,_rgba(232,69,90,0.2)_100%)] opacity-20 blur-[195px]" />
+      </div>
+
       {bgIllustration && (
         <img
           src={bgIllustration}
