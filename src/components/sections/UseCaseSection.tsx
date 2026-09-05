@@ -29,6 +29,7 @@ interface UseCaseSectionProps {
   diagram: ReactNode;
   stats: StatCardData[];
   textBlocks: TextBlock[];
+  bgIllustration?: string;
 }
 
 export default function UseCaseSection({
@@ -45,9 +46,18 @@ export default function UseCaseSection({
   diagram,
   stats,
   textBlocks,
+  bgIllustration,
 }: UseCaseSectionProps) {
   return (
     <section id={id} className="relative overflow-hidden border-t border-border px-6 py-24 sm:px-10 lg:py-32">
+      {bgIllustration && (
+        <img
+          src={bgIllustration}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute right-0 top-[24vw] -mr-16 w-[45vw] max-w-2xl select-none opacity-15 sm:top-[18vw] sm:-mr-28 lg:top-[14vw] lg:-mr-40"
+        />
+      )}
       <GhostNumeral number={ghostNumber} />
 
       <div className="relative mx-auto max-w-6xl">
