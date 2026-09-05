@@ -19,6 +19,11 @@ interface NeuralBackgroundProps {
    * Geschwindigkeits-Multiplikator.
    */
   speed?: number;
+  /**
+   * Multiplikator für die Sensitivität der Hover-Interaktion
+   * (Reichweite und Kraft, mit der Partikel auf die Maus reagieren).
+   */
+  hoverIntensity?: number;
 }
 
 export default function NeuralBackground({
@@ -27,6 +32,7 @@ export default function NeuralBackground({
   trailOpacity = 0.15,
   particleCount = 800,
   speed = 0.5,
+  hoverIntensity = 1,
 }: NeuralBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -72,12 +78,12 @@ export default function NeuralBackground({
         const dx = mouse.x - this.x;
         const dy = mouse.y - this.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-        const interactionRadius = 150;
+        const interactionRadius = 150 * hoverIntensity;
 
         if (distance < interactionRadius) {
           const force = (interactionRadius - distance) / interactionRadius;
-          this.vx -= dx * force * 0.05;
-          this.vy -= dy * force * 0.05;
+          this.vx -= dx * force * 0.05 * hoverIntensity;
+          this.vy -= dy * force * 0.05 * hoverIntensity;
         }
 
         this.x += this.vx;
@@ -169,7 +175,7 @@ export default function NeuralBackground({
       container.removeEventListener("mouseleave", handleMouseLeave);
       cancelAnimationFrame(animationFrameId);
     };
-  }, [color, trailOpacity, particleCount, speed]);
+  }, [color, trailOpacity, particleCount, speed, hoverIntensity]);
 
   return (
     <div

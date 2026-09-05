@@ -7,6 +7,7 @@ export default function Hero() {
         className="absolute inset-0 z-0"
         speed={0.475}
         particleCount={880}
+        hoverIntensity={1.2}
       />
       <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-t from-bg via-bg/40 to-bg/80" />
 
