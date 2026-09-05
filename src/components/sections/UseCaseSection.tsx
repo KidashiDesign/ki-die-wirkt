@@ -69,7 +69,7 @@ export default function UseCaseSection({
 
         <p className="mt-6 max-w-2xl text-lg text-fg-muted">{subline}</p>
 
-        <div className="mt-14 rounded-sm border border-border bg-bg-raised p-8 sm:p-10">
+        <div className="glass-panel mt-14 rounded-sm p-8 sm:p-10">
           {beatLabel && (
             <div className="mb-4 font-display text-5xl text-accent text-glow-red sm:text-6xl">
               {beatLabel}
