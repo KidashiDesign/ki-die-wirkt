@@ -61,7 +61,7 @@ export default function UseCaseSection({
           src={bgIllustration}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute right-0 top-[24vw] -mr-16 w-[45vw] max-w-2xl select-none opacity-15 sm:top-[18vw] sm:-mr-28 lg:top-[14vw] lg:-mr-40"
+          className="pointer-events-none absolute right-0 top-[24vw] -mr-8 w-[90vw] max-w-[84rem] select-none opacity-15 sm:top-[18vw] sm:-mr-14 lg:top-[14vw] lg:-mr-20"
         />
       )}
       <GhostNumeral number={ghostNumber} />
