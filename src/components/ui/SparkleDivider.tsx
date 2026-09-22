@@ -2,12 +2,20 @@ import Sparkles from "./Sparkles";
 
 interface SparkleDividerProps {
   className?: string;
+  heightClassName?: string;
 }
 
-export default function SparkleDivider({ className }: SparkleDividerProps) {
+export default function SparkleDivider({
+  className,
+  heightClassName = "h-56",
+}: SparkleDividerProps) {
   return (
     <div
-      className={["relative mx-auto h-56 w-full overflow-hidden", className]
+      className={[
+        "relative mx-auto w-full overflow-hidden",
+        heightClassName,
+        className,
+      ]
         .filter(Boolean)
         .join(" ")}
     >
