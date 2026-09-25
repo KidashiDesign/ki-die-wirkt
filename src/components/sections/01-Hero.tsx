@@ -13,11 +13,8 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-6xl">
         <h1 className="font-display uppercase leading-[0.92] text-5xl sm:text-7xl lg:text-8xl">
-          <span className="text-outline block">KI HABEN VIELE.</span>
-          <span className="block">
-            <span className="text-glow-red">ERGEBNISSE</span> DIE
-          </span>
-          <span className="block">WENIGSTEN.</span>
+          <span className="text-outline">KI HABEN VIELE.</span>{" "}
+          <span className="text-glow-red">ERGEBNISSE</span> DIE WENIGSTEN.
         </h1>
 
         <p className="mt-10 max-w-xl text-lg text-fg-muted sm:text-xl">

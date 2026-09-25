@@ -10,9 +10,7 @@ export default function UC03() {
       kickerStatus="Szenario"
       headline={
         <>
-          DAS CRM, DAS SICH
-          <br />
-          <span className="accent-em">SELBST PFLEGT.</span>
+          DAS CRM, DAS SICH <span className="accent-em">SELBST PFLEGT.</span>
         </>
       }
       subline="Das System arbeitet dem Vertrieb zu, statt Eingaben zu fordern — Briefing vorher, Nachfassung danach, alles im CRM."

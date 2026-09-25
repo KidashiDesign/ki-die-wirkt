@@ -10,10 +10,7 @@ export default function UC02() {
       kickerStatus="Im Einsatz"
       headline={
         <>
-          ERFAHRUNG,
-          <br />
-          <span className="accent-em">DIE</span>
-          <br />
+          ERFAHRUNG, <span className="accent-em">DIE</span>{" "}
           <span className="accent-em">BLEIBT.</span>
         </>
       }
