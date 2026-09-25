@@ -8,9 +8,7 @@ export default function BreakCTA() {
       </p>
 
       <h2 className="font-display text-4xl uppercase leading-tight sm:text-6xl">
-        20 MINUTEN.
-        <br />
-        <span className="accent-em">KEIN PITCH.</span>
+        20 MINUTEN. <span className="accent-em">KEIN PITCH.</span>
       </h2>
 
       <p className="mx-auto mt-8 max-w-2xl text-lg text-fg-muted">

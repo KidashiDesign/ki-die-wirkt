@@ -10,9 +10,7 @@ export default function UC01() {
       kickerStatus="Im Einsatz"
       headline={
         <>
-          KI, DIE <span className="accent-em">IM HAUS</span>
-          <br />
-          BLEIBT.
+          KI, DIE <span className="accent-em">IM HAUS</span> BLEIBT.
         </>
       }
       subline="Automatisierung dort, wo sie Marge bringt — ohne dass ein Byte Produktionswissen das Unternehmen verlässt."
