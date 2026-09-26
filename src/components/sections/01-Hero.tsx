@@ -5,7 +5,7 @@ export default function Hero() {
     <section id="hero" className="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 py-24 sm:px-10">
       <NeuralBackground
         className="absolute inset-0 z-0"
-        speed={0.475}
+        speed={0.3}
         particleCount={880}
         hoverIntensity={1.2}
       />
