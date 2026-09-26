@@ -1,9 +1,7 @@
-import { useRef } from "react";
 import Logo from "./components/ui/Logo";
 import LiveStatusBar from "./components/ui/LiveStatusBar";
 import ProgressRail from "./components/ui/ProgressRail";
 import useScrollSpy from "./hooks/useScrollSpy";
-import useAttentionCycle from "./hooks/useAttentionCycle";
 import Hero from "./components/sections/01-Hero";
 import TrennerSignalbahn from "./components/sections/02-TrennerSignalbahn";
 import TheseBeat from "./components/sections/03-TheseBeat";
@@ -21,18 +19,7 @@ import Footer from "./components/sections/14-Footer";
 const RAIL_SECTION_IDS = ["uc-01", "uc-02", "uc-03"];
 
 function App() {
-  const scrollSpyIndex = useScrollSpy(RAIL_SECTION_IDS);
-
-  // One-way latch: once the first tracked section has been reached, the
-  // scroll-down hint never plays again, even if the user scrolls back above it.
-  const hasReachedFirstSectionRef = useRef(false);
-  if (scrollSpyIndex !== -1) {
-    hasReachedFirstSectionRef.current = true;
-  }
-
-  const showHint = scrollSpyIndex === -1 && !hasReachedFirstSectionRef.current;
-  const hintIndex = useAttentionCycle(showHint, RAIL_SECTION_IDS.length);
-  const activeIndex = showHint ? hintIndex : scrollSpyIndex;
+  const activeIndex = useScrollSpy(RAIL_SECTION_IDS);
 
   return (
     <main className="bg-bg text-fg">
