@@ -30,6 +30,7 @@ interface UseCaseSectionProps {
   stats: StatCardData[];
   textBlocks: TextBlock[];
   bgIllustration?: string;
+  bgIllustrationAlign?: "left" | "right";
 }
 
 export default function UseCaseSection({
@@ -47,6 +48,7 @@ export default function UseCaseSection({
   stats,
   textBlocks,
   bgIllustration,
+  bgIllustrationAlign = "right",
 }: UseCaseSectionProps) {
   return (
     <section id={id} className="relative overflow-hidden border-t border-border px-6 py-24 sm:px-10 lg:py-32">
@@ -61,7 +63,11 @@ export default function UseCaseSection({
           src={bgIllustration}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute right-0 top-[24vw] -mr-8 w-[90vw] max-w-[84rem] select-none opacity-15 sm:top-[18vw] sm:-mr-14 lg:top-[14vw] lg:-mr-20"
+          className={
+            bgIllustrationAlign === "left"
+              ? "pointer-events-none absolute left-0 top-[24vw] -ml-8 w-[90vw] max-w-[84rem] select-none opacity-15 sm:top-[18vw] sm:-ml-14 lg:top-[14vw] lg:-ml-20"
+              : "pointer-events-none absolute right-0 top-[24vw] -mr-8 w-[90vw] max-w-[84rem] select-none opacity-15 sm:top-[18vw] sm:-mr-14 lg:top-[14vw] lg:-mr-20"
+          }
         />
       )}
       <GhostNumeral number={ghostNumber} />
