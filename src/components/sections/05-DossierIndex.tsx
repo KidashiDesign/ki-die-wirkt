@@ -3,6 +3,7 @@ interface DossierRow {
   title: string;
   meta: string;
   status: "live" | "scenario";
+  href: string;
   featured?: boolean;
 }
 
@@ -12,18 +13,21 @@ const rows: DossierRow[] = [
     title: "KI, die im Haus bleibt",
     meta: "Maschinenbau · Produktion",
     status: "live",
+    href: "#uc-01",
   },
   {
     nr: "02",
     title: "Erfahrung, die bleibt",
     meta: "Maschinenbau · Wissen",
     status: "live",
+    href: "#uc-02",
   },
   {
     nr: "03",
     title: "Das CRM, das sich selbst pflegt",
     meta: "B2B-Vertrieb · Sprach-KI",
     status: "scenario",
+    href: "#uc-03",
     featured: true,
   },
 ];
@@ -42,9 +46,10 @@ export default function DossierIndex() {
 
       <div className="mx-auto mt-12 max-w-7xl divide-y divide-border border-y border-border">
         {rows.map((row) => (
-          <div
+          <a
             key={row.nr}
-            className={`group relative flex cursor-default flex-col gap-2 overflow-hidden py-6 pl-4 transition-colors duration-300 hover:bg-bg-raised sm:flex-row sm:items-center sm:justify-between ${
+            href={row.href}
+            className={`group relative flex flex-col gap-2 overflow-hidden py-6 pl-4 transition-colors duration-300 hover:bg-bg-raised sm:flex-row sm:items-center sm:justify-between ${
               row.featured ? "border-l-2 border-accent" : "border-l-2 border-transparent"
             }`}
           >
@@ -86,7 +91,7 @@ export default function DossierIndex() {
                 {row.status === "live" ? "Im Einsatz" : "Szenario"}
               </span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
