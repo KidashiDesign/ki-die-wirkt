@@ -27,7 +27,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="absolute z-10 bottom-10 right-6 flex flex-col items-center gap-2 sm:right-10">
+      <div className="absolute z-10 bottom-10 right-6 flex flex-col items-center gap-2 sm:hidden">
         <span className="font-mono text-[10px] uppercase tracking-widest text-fg-muted [writing-mode:vertical-rl]">
           Scroll
         </span>
