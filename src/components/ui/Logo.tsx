@@ -23,7 +23,7 @@ export default function Logo() {
   return (
     <a
       href="#hero"
-      className={`fixed left-4 top-4 z-50 flex w-[38px] aspect-[156.4/187.2] items-center justify-center transition-[opacity,transform] duration-700 ease-out hover:scale-105 sm:left-8 sm:top-6 sm:w-12 ${
+      className={`fixed left-4 top-4 z-50 flex h-[72px] aspect-[156.4/187.2] items-center justify-center transition-[opacity,transform] duration-700 ease-out hover:scale-105 sm:left-8 sm:top-6 ${
         visible ? "opacity-100" : "pointer-events-none opacity-0"
       }`}
       aria-label="M² Business Consulting — Zurück zum Start"
