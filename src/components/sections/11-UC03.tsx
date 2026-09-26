@@ -15,6 +15,7 @@ export default function UC03() {
       }
       subline="Das System arbeitet dem Vertrieb zu, statt Eingaben zu fordern — Briefing vorher, Nachfassung danach, alles im CRM."
       ghostNumber="03"
+      bgIllustration="/M2-Waben-Illustration.svg"
       beatLabel="3"
       beatBody={
         <>
