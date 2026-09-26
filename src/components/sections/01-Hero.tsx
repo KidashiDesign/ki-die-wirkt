@@ -25,14 +25,6 @@ export default function Hero() {
           Was blockiert hat. Was den Weg frei gemacht hat. Und was am Ende dabei
           herauskommt — im Alltag, nicht auf der Folie.
         </p>
-
-        <div className="mt-16 flex items-center gap-6 font-mono text-sm tracking-widest text-fg-muted">
-          <span className="text-accent">01</span>
-          <span className="h-px w-8 bg-border" />
-          <span>02</span>
-          <span className="h-px w-8 bg-border" />
-          <span>03</span>
-        </div>
       </div>
 
       <div className="absolute z-10 bottom-10 right-6 flex flex-col items-center gap-2 sm:right-10">
