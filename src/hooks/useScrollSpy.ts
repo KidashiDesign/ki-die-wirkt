@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-// -1 until the user has actually reached the first tracked section.
+// -1 whenever none of the tracked sections is currently in view.
 export default function useScrollSpy(ids: string[]): number {
   const [activeIndex, setActiveIndex] = useState(-1);
 
@@ -23,7 +23,10 @@ export default function useScrollSpy(ids: string[]): number {
           }
         });
 
-        if (visible.size === 0) return;
+        if (visible.size === 0) {
+          setActiveIndex(-1);
+          return;
+        }
 
         const topMostVisibleIndex = ids
           .map((id, index) => (visible.has(id) ? index : -1))

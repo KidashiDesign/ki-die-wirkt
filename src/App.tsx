@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Logo from "./components/ui/Logo";
 import LiveStatusBar from "./components/ui/LiveStatusBar";
 import ProgressRail from "./components/ui/ProgressRail";
@@ -21,9 +22,17 @@ const RAIL_SECTION_IDS = ["uc-01", "uc-02", "uc-03"];
 
 function App() {
   const scrollSpyIndex = useScrollSpy(RAIL_SECTION_IDS);
-  const beforeFirstSection = scrollSpyIndex === -1;
-  const hintIndex = useAttentionCycle(beforeFirstSection, RAIL_SECTION_IDS.length);
-  const activeIndex = beforeFirstSection ? hintIndex : scrollSpyIndex;
+
+  // One-way latch: once the first tracked section has been reached, the
+  // scroll-down hint never plays again, even if the user scrolls back above it.
+  const hasReachedFirstSectionRef = useRef(false);
+  if (scrollSpyIndex !== -1) {
+    hasReachedFirstSectionRef.current = true;
+  }
+
+  const showHint = scrollSpyIndex === -1 && !hasReachedFirstSectionRef.current;
+  const hintIndex = useAttentionCycle(showHint, RAIL_SECTION_IDS.length);
+  const activeIndex = showHint ? hintIndex : scrollSpyIndex;
 
   return (
     <main className="bg-bg text-fg">
