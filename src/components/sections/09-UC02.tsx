@@ -16,6 +16,8 @@ export default function UC02() {
       }
       subline="Das Wissen langjähriger Mitarbeitender wird abrufbar — bevor es mit ihnen in Rente geht."
       ghostNumber="02"
+      bgIllustration="/M2-Waben-Illustration.svg"
+      bgIllustrationAlign="left"
       beatLabel={
         <>
           IMPLIZIT <span className="text-accent">→</span> EXPLIZIT
