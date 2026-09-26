@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
+// -1 until the user has actually reached the first tracked section.
 export default function useScrollSpy(ids: string[]): number {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   useEffect(() => {
     const elements = ids
