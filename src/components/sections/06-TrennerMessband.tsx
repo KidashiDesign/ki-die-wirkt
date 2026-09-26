@@ -34,7 +34,7 @@ export default function TrennerMessband() {
           />
         </div>
       )}
-      <section aria-hidden="true" className="border-t border-border py-12 sm:py-20" />
+      <section aria-hidden="true" className="border-t border-border py-0" />
     </div>
   );
 }
